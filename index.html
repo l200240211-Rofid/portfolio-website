@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -14,79 +15,80 @@
 
 <body>
 
-<!-- NAVBAR -->
 <header>
+    <button id="theme-toggle">☀️</button>
     <div class="logo">Rofid</div>
 
     <nav>
         <a href="index.html" class="active">Home</a>
-        <a href="portfolio.html">Tentang</a>
-        <a href="contact.html">Kontak</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
 
-    <!-- LEFT -->
     <div class="hero-text">
 
-        <span class="small-text">Halo, saya</span>
+        <span class="small-text">Frontend Developer</span>
 
         <h1>
-            Rofid <br>
-            <span>Web Developer</span>
+            Modern <br>
+            Portfolio Website
         </h1>
 
         <p>
-            Mahasiswa yang fokus membangun website modern,
-            responsive, dan elegan menggunakan HTML dan CSS.
+            Mahasiswa yang fokus membuat website modern,
+            responsive, dan elegan menggunakan HTML & CSS.
         </p>
 
         <div class="buttons">
             <a href="portfolio.html" class="btn-primary">
-                Lihat Portfolio
+                Explore Work
             </a>
 
             <a href="contact.html" class="btn-secondary">
-                Kontak Saya
+                Contact Me
             </a>
         </div>
 
     </div>
 
-    <!-- RIGHT -->
     <div class="hero-image">
 
-        <div class="image-card">
+    <!-- TALI -->
+    <div class="hanger"></div>
 
-            <img src="images/profile.jpg" alt="Foto Profil">
+    <!-- CARD -->
+    <div class="profile-card">
 
-        </div>
+        <img src="images/profile.jpeg" alt="Profile">
+
+        <!-- GLOW -->
+        <div class="bottom-light"></div>
 
     </div>
+
+</div>
 
 </section>
+<script>
 
-<!-- SKILL -->
-<section class="skills">
+const toggleBtn =
+document.getElementById("theme-toggle");
 
-    <div class="skill-card">
-        <h3>HTML</h3>
-        <p>Membuat struktur website modern.</p>
-    </div>
+toggleBtn.onclick = function(){
 
-    <div class="skill-card">
-        <h3>CSS</h3>
-        <p>Mendesain tampilan responsive dan elegan.</p>
-    </div>
+    document.body.classList.toggle("light-mode");
 
-    <div class="skill-card">
-        <h3>UI Design</h3>
-        <p>Membuat tampilan website yang nyaman dilihat.</p>
-    </div>
+    if(document.body.classList.contains("light-mode")){
+        toggleBtn.innerHTML = "🌙";
+    } else{
+        toggleBtn.innerHTML = "☀️";
+    }
 
-</section>
+}
 
+</script>
 </body>
 </html>

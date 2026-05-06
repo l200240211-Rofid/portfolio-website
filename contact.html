@@ -1,0 +1,88 @@
+<!-- ========================= -->
+<!-- contact.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <button id="theme-toggle">☀️</button>
+    <div class="logo">Contact</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<section class="contact">
+
+    <div class="contact-left">
+
+        <span>Let's Talk</span>
+
+        <h1>
+            Contact <br>
+            Me
+        </h1>
+
+        <p>
+            Silakan hubungi saya untuk diskusi project,
+            kerja sama, atau pertanyaan lainnya.
+        </p>
+
+    </div>
+
+    <div class="contact-right">
+
+        <form>
+
+            <input type="text" placeholder="Nama">
+
+            <input type="email" placeholder="Email">
+
+            <textarea placeholder="Pesan"></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<script>
+
+const toggleBtn =
+document.getElementById("theme-toggle");
+
+toggleBtn.onclick = function(){
+
+    document.body.classList.toggle("light-mode");
+
+    if(document.body.classList.contains("light-mode")){
+        toggleBtn.innerHTML = "🌙";
+    } else{
+        toggleBtn.innerHTML = "☀️";
+    }
+
+}
+
+</script>
+</body>
+</html>
