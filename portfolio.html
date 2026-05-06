@@ -1,87 +1,136 @@
-<!-- ========================= -->
-<!-- portfolio.html -->
-<!-- ========================= -->
-
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portfolio</title>
+<title>Portfolio | Rofid</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
+
     <button id="theme-toggle">☀️</button>
-    <div class="logo">Portfolio</div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html" class="active">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<section class="portfolio">
-
-    <div class="portfolio-title">
-        <span>My Work</span>
-        <h1>Featured Projects</h1>
+    <div class="logo">
+        Rofid
     </div>
 
-    <div class="portfolio-grid">
+    <nav>
 
-        <div class="project-card">
+        <a href="index.html">Home</a>
 
-            <img src="images/project1.jpg">
+        <a href="portfolio.html" class="active">
+            Tentang
+        </a>
 
-            <div class="project-content">
-                <h3>Modern Landing Page</h3>
+        <a href="#skills">Skill</a>
 
-                <p>
-                    Website modern dengan desain clean dan responsive.
-                </p>
+        <a href="contact.html">
+            Kontak
+        </a>
 
-                <a href="#">Live Demo</a>
-            </div>
+    </nav>
+
+</header>
+
+<!-- ABOUT -->
+<section class="about-page">
+
+    <!-- FOTO -->
+    <div class="about-image">
+
+        <!-- TALI -->
+        <div class="hanger"></div>
+
+        <!-- CARD -->
+        <div class="profile-card">
+
+            <img src="images/profile.jpeg" alt="Profile">
+
+            <!-- GLOW -->
+            <div class="bottom-light"></div>
 
         </div>
 
-        <div class="project-card">
+    </div>
 
-            <img src="images/project2.jpg">
+    <!-- TEXT -->
+    <div class="about-content">
 
-            <div class="project-content">
-                <h3>Personal Portfolio</h3>
+        <h1>
+            Tentang <span>Saya</span>
+        </h1>
 
-                <p>
-                    Portfolio website dengan modern.
-                </p>
+        <h2>
+            Perjalanan Belajar Coding
+        </h2>
 
-                <a href="#">Live Demo</a>
-            </div>
+        <p>
+            Saya mulai belajar coding pada tahun 2024 setelah lulus SMA
+            dan melanjutkan pendidikan di Universitas Muhammadiyah Surakarta (UMS)
+            jurusan Teknik Informatika.
 
+            Selain belajar di perkuliahan, saya juga aktif mempelajari
+            pengembangan website secara otodidak melalui YouTube,
+            dokumentasi, dan berbagai project latihan.
+
+            Saat ini saya fokus membuat website modern,
+            responsive, dan clean menggunakan HTML & CSS.
+        </p>
+
+        <!-- VISI -->
+        <div class="vision-card">
+
+            <h3>
+                Visi & Tujuan
+            </h3>
+
+            <p>
+                Menjadi seorang developer yang tidak hanya memahami
+                pengembangan website, tetapi juga mendalami bidang
+                Cyber Security untuk meningkatkan keamanan sistem
+                dan data digital.
+
+                Saya ingin terus belajar, mengembangkan kemampuan,
+                dan mengikuti perkembangan teknologi agar dapat
+                menciptakan solusi digital yang modern, aman,
+                dan bermanfaat.
+            </p>
         </div>
 
-        <div class="project-card">
+        <!-- SKILL -->
+        <div id="skills">
 
-            <img src="images/project3.jpg">
+            <h2 class="skill-title">
+                Skill Utama
+            </h2>
 
-            <div class="project-content">
-                <h3>UI Website Design</h3>
+            <div class="skills">
 
-                <p>
-                    User interface modern menggunakan glassmorphism.
-                </p>
+                <span>HTML5</span>
 
-                <a href="#">Live Demo</a>
+                <span>CSS3</span>
+
+                <span>JavaScript</span>
+
+                <span>Responsive Design</span>
+
+                <span>UI Design</span>
+
+                <span>Frontend</span>
+
             </div>
 
         </div>
@@ -89,6 +138,8 @@
     </div>
 
 </section>
+
+<!-- DARK MODE -->
 <script>
 
 const toggleBtn =
@@ -99,13 +150,18 @@ toggleBtn.onclick = function(){
     document.body.classList.toggle("light-mode");
 
     if(document.body.classList.contains("light-mode")){
+
         toggleBtn.innerHTML = "🌙";
+
     } else{
+
         toggleBtn.innerHTML = "☀️";
+
     }
 
 }
 
 </script>
+
 </body>
 </html>

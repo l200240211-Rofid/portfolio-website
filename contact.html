@@ -1,71 +1,155 @@
-<!-- ========================= -->
-<!-- contact.html -->
-<!-- ========================= -->
-
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contact</title>
+<title>Contact | Rofid</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
+
     <button id="theme-toggle">☀️</button>
-    <div class="logo">Contact</div>
+
+    <div class="logo">
+        Rofid
+    </div>
 
     <nav>
+
         <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html" class="active">Contact</a>
+
+        <a href="portfolio.html">Tentang</a>
+
+        <a href="index.html#project">Project</a>
+
+        <a href="contact.html" class="active">
+            Kontak
+        </a>
+
     </nav>
+
 </header>
 
-<section class="contact">
+<!-- CONTACT -->
+<section class="contact-page">
 
-    <div class="contact-left">
-
-        <span>Let's Talk</span>
+    <!-- TITLE -->
+    <div class="contact-title">
 
         <h1>
-            Contact <br>
-            Me
+            Hubungi <span>Saya</span>
         </h1>
 
         <p>
-            Silakan hubungi saya untuk diskusi project,
-            kerja sama, atau pertanyaan lainnya.
+            Punya pertanyaan atau ingin bekerja sama?
+            Silakan hubungi saya!
         </p>
 
     </div>
 
-    <div class="contact-right">
+    <!-- CONTENT -->
+    <div class="contact-container">
 
-        <form>
+        <!-- FORM -->
+        <div class="contact-form">
 
-            <input type="text" placeholder="Nama">
+            <form>
 
-            <input type="email" placeholder="Email">
+                <label>Nama Lengkap</label>
 
-            <textarea placeholder="Pesan"></textarea>
+                <input type="text"
+                placeholder="Masukkan nama lengkap Anda">
 
-            <button type="submit">
-                Send Message
-            </button>
+                <label>Email</label>
 
-        </form>
+                <input type="email"
+                placeholder="contoh@email.com">
+
+                <label>Pesan</label>
+
+                <textarea
+                placeholder="Tulis pesan Anda di sini..."></textarea>
+
+                <button type="submit">
+                    Kirim Pesan
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- INFO -->
+        <div class="contact-info">
+
+            <h2>
+                Mari Berkenalan!
+            </h2>
+
+            <p>
+                Saya sangat terbuka untuk diskusi
+                tentang project baru, kolaborasi,
+                atau sekadar berbicara tentang
+                teknologi dan pengembangan web.
+            </p>
+
+            <!-- ITEM -->
+            <div class="info-item">
+                ✉️ l200240211@student.ums.ac.id
+            </div>
+
+            <div class="info-item">
+                📍 Indonesia
+            </div>
+
+            <div class="info-item">
+                ⏰ Responsif: 24-48 jam
+            </div>
+
+            <!-- SOCIAL -->
+            <h3>
+                Sosial Media
+            </h3>
+
+            <div class="social-icons">
+
+    <a href="#">
+        <img src="images/icons/instagram.svg" alt="Instagram">
+    </a>
+
+    <a href="#">
+        <img src="images/icons/whatsapp.svg" alt="WhatsApp">
+    </a>
+
+    <a href="#">
+        <img src="images/icons/github.svg" alt="GitHub">
+    </a>
+
+    <a href="#">
+        <img src="images/icons/linkedin.svg" alt="LinkedIn">
+    </a>
+
+</div>
+
+        </div>
 
     </div>
 
 </section>
+
+<!-- DARK MODE -->
 <script>
 
 const toggleBtn =
@@ -76,13 +160,18 @@ toggleBtn.onclick = function(){
     document.body.classList.toggle("light-mode");
 
     if(document.body.classList.contains("light-mode")){
+
         toggleBtn.innerHTML = "🌙";
+
     } else{
+
         toggleBtn.innerHTML = "☀️";
+
     }
 
 }
 
 </script>
+
 </body>
 </html>
