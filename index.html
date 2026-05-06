@@ -1,40 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Rofid | Portfolio</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
     <button id="theme-toggle">☀️</button>
-    <div class="logo">Rofid</div>
+
+    <div class="logo">
+        Rofid
+    </div>
 
     <nav>
-    <a href="#home">Home</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-</nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">Tentang</a>
+
+        <a href="#project">Project</a>
+
+        <a href="#contact.html">Contact</a>
+
+    </nav>
+
 </header>
 
+<!-- HOME -->
 <section id="home" class="hero">
 
+    <!-- TEXT -->
     <div class="hero-text">
 
-        <span class="small-text">Frontend Developer</span>
+        <span class="small-text">
+            Halo, saya
+        </span>
 
         <h1>
-            Modern <br>
-            Portfolio Website
+            Rofid <br>
+            Frontend Developer
         </h1>
 
         <p>
@@ -42,116 +60,117 @@
             responsive, dan elegan menggunakan HTML & CSS.
         </p>
 
-        <div class="buttons">
-            <a href="portfolio.html" class="btn-primary">
-                Explore Work
+        <div class="hero-buttons">
+
+            <a href="#project" class="btn-primary">
+                Lihat Project
             </a>
 
-            <a href="contact.html" class="btn-secondary">
+            <a href="#contact" class="btn-secondary">
                 Contact Me
             </a>
+
         </div>
 
     </div>
 
+    <!-- FOTO -->
     <div class="hero-image">
 
-    <!-- TALI -->
-    <div class="hanger"></div>
+        <div class="hanger"></div>
 
-    <!-- CARD -->
-    <div class="profile-card">
+        <div class="profile-card">
 
-        <img src="images/profile.jpeg" alt="Profile">
+            <img src="images/profile.jpeg" alt="Profile">
 
-        <!-- GLOW -->
-        <div class="bottom-light"></div>
-
-    </div>
-
-</div>
-
-</section>
-<!-- PORTFOLIO -->
-<section id="portfolio" class="portfolio">
-
-    <div class="portfolio-title">
-        <span>My Work</span>
-        <h1>Featured Projects</h1>
-    </div>
-
-    <div class="portfolio-grid">
-
-        <div class="project-card">
-
-            <img src="images/project1.jpg">
-
-            <div class="project-content">
-                <h3>Modern Landing Page</h3>
-
-                <p>
-                    Website modern dengan desain clean dan responsive.
-                </p>
-
-                <a href="#">Live Demo</a>
-            </div>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="images/project2.jpg">
-
-            <div class="project-content">
-                <h3>Personal Portfolio</h3>
-
-                <p>
-                    Portfolio modern dengan tema hitam putih elegan.
-                </p>
-
-                <a href="#">Live Demo</a>
-            </div>
+            <div class="bottom-light"></div>
 
         </div>
 
     </div>
 
 </section>
-<!-- CONTACT -->
-<section id="contact" class="contact">
 
-    <div class="contact-left">
+<!-- PROJECT -->
+<section id="project" class="project-section">
 
-        <span>Let's Talk</span>
+    <div class="section-title">
 
-        <h1>Contact Me</h1>
+        <span>My Project</span>
 
-        <p>
-            Silakan hubungi saya untuk diskusi project,
-            kerja sama, atau pertanyaan lainnya.
-        </p>
+        <h1>
+            Featured Projects
+        </h1>
 
     </div>
 
-    <div class="contact-right">
+    <div class="project-grid">
 
-        <form>
+        <!-- CARD 1 -->
+        <div class="project-card">
 
-            <input type="text" placeholder="Nama">
+            <div class="project-icon">
+                🚀
+            </div>
 
-            <input type="email" placeholder="Email">
+            <h3>
+                Modern Landing Page
+            </h3>
 
-            <textarea placeholder="Pesan"></textarea>
+            <p>
+                Website modern dengan desain clean
+                dan responsive.
+            </p>
 
-            <button type="submit">
-                Send Message
-            </button>
+            <div class="project-buttons">
 
-        </form>
+                <a href="#">
+                    Live Demo
+                </a>
+
+                <a href="#">
+                    Source Code
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="project-card">
+
+            <div class="project-icon">
+                💻
+            </div>
+
+            <h3>
+                Portfolio Website
+            </h3>
+
+            <p>
+                Website portfolio modern dengan tema
+                hitam putih elegan.
+            </p>
+
+            <div class="project-buttons">
+
+                <a href="#">
+                    Live Demo
+                </a>
+
+                <a href="#">
+                    Source Code
+                </a>
+
+            </div>
+
+        </div>
 
     </div>
 
 </section>
+
+
 <script>
 
 const toggleBtn =
@@ -162,9 +181,13 @@ toggleBtn.onclick = function(){
     document.body.classList.toggle("light-mode");
 
     if(document.body.classList.contains("light-mode")){
+
         toggleBtn.innerHTML = "🌙";
+
     } else{
+
         toggleBtn.innerHTML = "☀️";
+
     }
 
 }
