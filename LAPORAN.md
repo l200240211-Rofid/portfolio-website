@@ -4,7 +4,7 @@
 
 - Nama : Rofid
 - NIM : I200240211
-- Mata Kuliah : Membangun Website Personal
+- Mata Kuliah : Pemrograman Web
 
 ---
 
