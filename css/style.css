@@ -243,7 +243,7 @@ nav a:hover{
 }
 
 .section-title span{
-    color:#cfcfcf;
+    color:#555;
 
     font-size:16px;
 }
@@ -350,7 +350,7 @@ nav a:hover{
 }
 
 .contact-left span{
-    color:#cfcfcf;
+    color:#555;
 }
 
 .contact-left h1{
@@ -473,7 +473,7 @@ body.light-mode .small-text,
 body.light-mode .section-title span,
 body.light-mode .contact-left span{
 
-    color:#666;
+    color:#444;
 }
 
 body.light-mode .hero-text p,
@@ -648,7 +648,7 @@ body.light-mode #theme-toggle{
 
 .about-content h1 span{
 
-    color:#cfcfcf;
+    color:#555;
 }
 
 .about-content h2{
@@ -815,7 +815,8 @@ nav .active{
 
 .about-content h1 span{
 
-    color:#cfcfcf;
+    
+    color:#555;
 }
 
 .about-content h2{
@@ -962,7 +963,7 @@ nav .active{
 
 .contact-title h1 span{
 
-    color:#cfcfcf;
+    color:#555;
 }
 
 .contact-title p{
@@ -1334,4 +1335,13 @@ body.light-mode .social-icons a{
     background:white;
 
     border:1px solid #ccc;
+}
+
+/* LIGHT MODE FOCUS */
+body.light-mode a:focus,
+body.light-mode button:focus,
+body.light-mode input:focus,
+body.light-mode textarea:focus{
+
+    outline:2px solid black;
 }
