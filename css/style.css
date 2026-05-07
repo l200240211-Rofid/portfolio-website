@@ -211,9 +211,9 @@ nav a:hover{
 
 /* FOTO */
 .profile-card img{
-    width:220px;
+    width:150px;
 
-    border-radius:25px;
+    border-radius:20px;
 
     object-fit:cover;
 }
@@ -1321,4 +1321,17 @@ body.light-mode .contact-title p,
 body.light-mode .contact-form label{
 
     color:#222;
+}
+
+/* LIGHT MODE SOCIAL ICON */
+body.light-mode .social-icons img{
+
+    filter:invert(0);
+}
+
+body.light-mode .social-icons a{
+
+    background:white;
+
+    border:1px solid #ccc;
 }
